@@ -155,9 +155,9 @@ Now press (Ctrl-X) to exit
     
 ### STEP 14 create a site in frappe bench 
     
-    bench new-site dcode.com
+    bench new-site test1.com
     
-    bench use dcode.com
+    bench use .com
 
 ### STEP 15 install ERPNext latest version in bench & site
 
@@ -168,28 +168,28 @@ Now press (Ctrl-X) to exit
     ###OR
     bench get-app https://github.com/frappe/erpnext --branch version-14
 
-    bench --site dcode.com install-app erpnext
+    bench --site .com install-app erpnext
     
     bench start
     
 ### Step 16 setup production
     
-    sudo bench setup production dcode-frappe
+    sudo bench setup production frappe
     bench restart
 
 #### If bench restart is not worked run the following command again with all Questions Yes
     
-    sudo bench setup production dcode-frappe
+    sudo bench setup production frappe
     
 #### if js and css file is not loading on login window run the following command
 
-    sudo chmod o+x /home/dcode-frappe
+    sudo chmod o+x /home/frappe
     
 #### STEP 17 Create a new user
     
-    sudo adduser dcode-frappe
-    sudo usermod -aG sudo dcode-frappe
-    su - dcode-frappe
+    sudo adduser frappe
+    sudo usermod -aG sudo frappe
+    su - frappe
     
     
     
